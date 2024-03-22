@@ -8,12 +8,12 @@
   <body>
     <script>
       let numbs = [3, 4, 5, 7, 9, 87, 6];
-      let sum = 0;
+      let square = [];
 
       for (let i = 0; i < numbs.length; i++) {
-        sum += numbs[i];
+        square[i] = numbs[i] * numbs[i];
       }
-      console.log(sum);
+      console.log(`square of an array ${square}`);
     </script>
   </body>
 </html>

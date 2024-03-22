@@ -7,13 +7,15 @@
   </head>
   <body>
     <script>
-      let numbs = [3, 4, 5, 7, 9, 87, 6];
-      let square = [];
+      // break statement in js
 
-      for (let i = 0; i < numbs.length; i++) {
-        square[i] = numbs[i] * numbs[i];
+      let arrrs = [1, 2, 3, 3, 4, 56, 666, 67, 68, 90];
+      for (let i = 0; i < arrrs.length; i++) {
+        if (arrrs[i] === 666) {
+          console.log(`number found at ${i}`);
+          break;
+        }
       }
-      console.log(`square of an array ${square}`);
     </script>
   </body>
 </html>

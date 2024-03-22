@@ -9,10 +9,11 @@
     <script>
       //  logic bulding in js (problem solving)
 
-      let arr = [5, 6];
-      arr.push(7);
-      arr.unshift(4);
-      console.log(arr);
+      function getElement(arr, position) {
+        return arr[position - 1];
+      }
+      let arr = [1, 2, 3, , 5, 6, 78, 90, 789];
+      console.log(getElement(arr, 8));
     </script>
   </body>
 </html>

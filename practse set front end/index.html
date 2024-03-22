@@ -9,18 +9,10 @@
     <script>
       //  logic bulding in js (problem solving)
 
-      // function arrCopy(arr) {
-      //   return arr.slice(0, arr.length);
-      // }
-
-      // let arr = [1, 3, 4, 3, 56, 6, 9];
-      // console.log(arrCopy(arr));
-
-      for (let i = 10; i > 0; i--) {
-        console.log(i);
-      }
-      for (let i = 0; i < 10; i++) {
-        console.log(10 - i);
+      let nums = [1, -6, 5, 7, -98];
+      for (let i = 0; i < nums.length; i++) {
+        if (nums[i] < 0) continue;
+        console.log(nums[i]);
       }
     </script>
   </body>

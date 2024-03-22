@@ -9,12 +9,35 @@
     <script>
       //  logic bulding in js (problem solving)
 
-      function arrCopy(arr) {
-        return arr.slice(0, arr.length);
+      // function arrCopy(arr) {
+      //   return arr.slice(0, arr.length);
+      // }
+
+      // let arr = [1, 3, 4, 3, 56, 6, 9];
+      // console.log(arrCopy(arr));
+
+      function isPrime(num) {
+        for (let i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
       }
 
-      let arr = [1, 3, 4, 3, 56, 6, 9];
-      console.log(arrCopy(arr));
+      let num = 2;
+      let i = 0;
+
+      while (true) {
+        if (isPrime(num)) {
+          console.log(num);
+          i++;
+          if (i >= 5) {
+            break;
+          }
+        }
+        num++;
+      }
     </script>
   </body>
 </html>
